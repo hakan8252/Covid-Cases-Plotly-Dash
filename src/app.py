@@ -13,7 +13,7 @@ server = app.server
 
 # ---------------------------------------------------------------
 # Taken from https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases
-url = 'https://raw.githubusercontent.com/hakan8252/Dashboards/Covid19-Cases/main/COVID-19-geographic-disbtribution-worldwide-2020-03-29.xlsx'
+url = 'https://raw.githubusercontent.com/hakan8252/Covid-Cases-Plotly-Dash/main/COVID-19-geographic-disbtribution-worldwide-2020-03-29.xlsx'
 df = pd.read_excel(url)
 #
 dff = df.groupby('countriesAndTerritories', as_index=False)[['deaths', 'cases']].sum()
